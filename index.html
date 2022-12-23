@@ -11,56 +11,87 @@
         margin: 0;
         padding: 0;
     }
-    .header{
-        height: 100vh;
-        width: 100%;
-        background-image:url(banner.png);
-        background-position: center;
-        background-size: cover;
-        position: relative;
+    nav {
+        width: 90%;
+        height: 75px;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        background-image: linear-gradient(#033747, #012733);
+    }    
+    nav .logo p {
+        font-size: 30px;
+        font-weight: bold;
+        float: left;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
     }
-    nav{
-        display: flex;
-        padding: 2% 6%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav img{
-        width: 150px;
-    }
-    .nav-links{
-        flex: 1;  
-        text-align: right;
+ nav ul{
+    float: right;
+ }
+ nav li{
+    display:inline-block;
+    list-style: none;
     
+ }
+ nav li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: white;
+ }
+ nav li a:hover {
+        color: orange;
     }
-    .nav-links ul li{
-        list-style: none;
-        display:inline-block;
-        padding: 8px 15px; 
-        position: relative;
-    
+    /*  */
+    .pi{
+        height: 50vh;
+        width: 196.2vh;
+        background-image: linear-gradient(rgba(0,9,30,0.7));
     }
+    .box{
+        height: 300px;
+        width: 196.2vh;
+        padding: 0px;
+        margin-bottom:10px;
+        background-color:darkgray;
+    }
+    .box h1{
+        text-align: center;
+        text-decoration: underline;
+        text-shadow: 0 1.5px;
+    }
+    .box p{
+        color:whitesmoke;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+}
 </style>
 <body>
-    <section class="header">
-        <nav >
-            <a href="index.html"><img src="logo.png" alt="logo"></a>
-            <div>
-                <ul>
-                    
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Course</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-
-            </div>
-        </nav>
-
-
-
-    </section>
+    <nav>
+    <div class="logo">
+        <p id="dd">ASSiGNMENT</p>
+    </div>
+    <ul>
+    <li>    <a href="./index.html">Home</a></li>
+    <li>    <a href="./about-us.html">About me</a></li>
+    <li>    <a href="./contact-us.html">About My Qualification</a></li>
+    <li>    <a href="./registration.html">REGISTRATION</a></li>
+    </ul>
+    </nav>
+    <img class="pi" src="https://images.pexels.com/photos/12139674/pexels-photo-12139674.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="image">
+    
+    <br>
+    <div class="box">
+        <h1>Auto Bio Graphy</h1>
+        <br>
+        <p>My Name is Muhammad naufel khan .I was born in karachi and lived in karachi since i was born.</p>
+        <p> My father is a business man. And</p>
+        
+    </div>
 </body>
 </html>

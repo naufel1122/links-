@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      *{
+        margin:0%;
+        padding: 0%;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(grey, lightskyblue);
+}
+
+
+
+    nav {
+        width: 100%;
+        height: 75px;
+        top: 0%;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        background-image: linear-gradient(#033747, #012733);
+    }
+
+    nav .logo p {
+        font-size: 30px;
+        font-weight: bold;
+        font-family:'Times New Roman', Times, serif;
+        float: left;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        float: right;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif }
+
+    nav li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav li a {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 30px;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        color: orange;
+    }
+   .logo p::first-letter {
+        font-size: xx-large;
+        color: bisque;
+    }
+    .container{
+    max-width: 650px;
+    padding: 20px;
+    margin: 0%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0,0,0.2);
+    box-shadow: 0 15px 20px rgba(0, 0,0,0.6);
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input-box{
+    display: flex;
+    flex-wrap:wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input-box:nth-child(2n){
+    justify-content:end;
+}
+.input-box label,.gender-title{
+    width: 95%;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.gender-title{
+    font-size:16px ;  
+}
+.input-box input{
+    height: 40px;
+    width: 90%;
+    padding: 0 10%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+
+
+}
+.but{
+
+    margin: 15px 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 6px;
+    background-image: linear-gradient(#aa076b,#61045f);
+}
+.but:hover{
+    background-image: linear-gradient( to right,#61045f,#aa076b);
+}
+
+</style>
+<body>
+    <nav>
+    <div class="logo">
+        <p id="dd">ASSiGNMENT</p>
+    </div>
+    <ul>
+    <li>    <a href="./index.html">Home</a></li>
+    <li>    <a href="./about-us.html">About me</a></li>
+    <li>    <a href="./contact-us.html">About My Qualification</a></li>
+    <li>    <a href="./registration.html">Registration</a></li>
+    </ul>
+    </nav>
+
+        <DIV class="container">
+            <form action="" method="post">
+                <h1> REGISTRATION</h1>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name"> Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" name="name" required>    
+                    </div>
+                    <div class="input-box">
+                        <label for="name"> Username</label>
+                        <input type="text" placeholder="Username" name="uname" required>    
+                    </div>
+                    <div class="input-box">
+                        <label for="name"> Email</label>
+                        <input type="Emial" placeholder="Email" name="Email" required>    
+                    </div>
+                    <div class="input-box">
+                        <label for="name">Phone Number  </label>
+                        <input type="tel" placeholder="Phone Number" name="Phone Number" required>    
+                    </div>
+                    <div class="input-box">
+                        <label for="name"> Password</label>
+                        <input type="Password" placeholder="Password" name="Password" required>    
+                    </div>
+                    <div class="input-box">
+                        <label for="name"> Confirm Password</label>
+                        <input type="Password" placeholder="Confirm Password" name="Confirm Password" required>    
+                    </div>
+                    <span class="gender-title">Gender</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="Other">other<label>
+                    </div>
+                </div>
+                <div class="alert">
+                    <p>
+                        by clicking sign up, you agree to our <a href="#"> Terms</a><a href="#"> Privacy Policy</a>. You my recieve sms notification from us and get OTP out at mt time.
+                    </p>
+                    <button class="but">
+                        Register
+                    </button>
+                </div>
+            </form>
+    
+    
+    
+        </DIV>
+    
+</body>
+</html>
